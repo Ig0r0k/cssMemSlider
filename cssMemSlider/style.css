@@ -104,13 +104,13 @@ ol, li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-color: #f99;
+  background-color: #333;
   counter-increment: item;
 }
 
-.carousel__slide:nth-child(even) {
+/* .carousel__slide:nth-child(even) {
   background-color: #99f;
-}
+} */
 
 /* .carousel__slide:before {
   content: counter(item);
@@ -155,10 +155,32 @@ ol, li {
   animation-name: none;
 }
 
+.carousel__snapper {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mem-picture  img {
+  border-radius: 5px;
+}
+
+.mem-text {
+  color: #fff;
+}
+
 .carousel__navigation {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 17px;
   left: 0;
   text-align: center;
 }
@@ -170,14 +192,23 @@ ol, li {
 
 .carousel__navigation-button {
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #333;
+  width: 2.5rem;
+  height: 2.5rem;
+  /* background-color: #333; */
+  background-color: #99f;
   background-clip: content-box;
-  border: 0.25rem solid transparent;
+  border: 0.75rem solid transparent;
   border-radius: 50%;
   font-size: 0;
   transition: transform 0.1s;
+}
+
+.carousel__navigation-button:hover {
+  background-color: #fff;
+}
+
+.carousel__navigation-button:active {
+  background-color: #f99;
 }
 
 /* .carousel::before,
