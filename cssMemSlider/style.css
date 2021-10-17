@@ -112,7 +112,7 @@ ol, li {
   background-color: #99f;
 }
 
-.carousel__slide:before {
+/* .carousel__slide:before {
   content: counter(item);
   position: absolute;
   top: 50%;
@@ -120,7 +120,7 @@ ol, li {
   transform: translate3d(-50%,-40%,70px);
   color: #fff;
   font-size: 2em;
-}
+} */
 
 .carousel__snapper {
   position: absolute;
